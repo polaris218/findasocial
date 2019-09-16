@@ -1,0 +1,100 @@
+.search-result {
+  justify-content: center;
+  margin-top: 15%;
+  .result-item {
+    text-align: center;
+    &:nth-of-type(2) {
+      margin-top: 20px;
+    }
+    .board {
+      width: 97%;
+      margin: auto;
+      // border: 1px #D8D8D8 solid;
+      border-radius: 24px;
+      box-shadow: 0 6px 20px 0 rgba(77,89,214,0.08);
+      background-color: #FFFFFF;
+      .person-image {
+        margin-top: -57px;
+        height: 114px;
+        width: 114px;
+        box-shadow: 0px 6px 5px #ccc;
+        border-radius: 57px;
+      }
+      .hints {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: 'Barlow', sans-serif;
+        color: #3F4145;
+        font-size: 12px;
+        opacity: 0.5;
+      }
+      .description {
+        font-family: 'Barlow', sans-serif;
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        color: #3F4145;
+      }
+      .item {
+        &:nth-of-type(1) {
+          border-right: 1px rgba($color: #D8D8D8, $alpha: 0.2) solid;
+          padding-right: 0px;
+        }
+        &:nth-of-type(2) {
+          border-right: 1px rgba($color: #D8D8D8, $alpha: 0.2) solid;
+        }
+        &:nth-of-type(3) {
+          padding-left: 0px;
+        }
+        label {
+          margin-bottom: 0px;
+        }
+      }
+      h5 {
+        font-weight: 800;
+        font-family: 'Barlow', sans-serif;
+        color: #2C2C2C;
+        margin-bottom: 0px;
+      }
+      h4 {
+        font-family: 'Barlow', sans-serif;
+        color: #2C2C2C;
+        font-weight: 700;
+        margin-top: 20px;
+      }
+      small {
+        opacity: 0.5;
+        font-family: Barlow;
+        font-weight: bold;
+        line-height: 32px;
+      }
+      .button-board {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #F32855;
+        border-top: 1px rgba($color: #D8D8D8, $alpha: 0.2)  solid;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: 700;
+        margin-top: 15px;
+      }
+      .crown-board {
+        width: 114px;
+        height: 114px;
+        margin: auto;
+        position: relative;
+        .crown {
+          position: absolute;
+          right: 5px;
+          top: 30px;
+        }
+      }
+    }
+    @media screen and (max-width: 768px){
+      margin-bottom: 100px;
+      &:nth-of-type(2) {
+        margin-top: 0px;
+      }
+    }
+  }
+}
